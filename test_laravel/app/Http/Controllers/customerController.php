@@ -27,7 +27,17 @@ class customerController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $name = $request->input("name");
+        $phone = $request->input("phone");
+        
+        $customerModel = new customerModel();
+
+        $customerModel -> c_name = $name;
+        $customerModel -> c_phone = $phone;
+
+        $customerModel -> save();
+
+        return view('crud');
     }
 
     /**

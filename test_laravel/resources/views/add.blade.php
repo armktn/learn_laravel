@@ -3,21 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{asset("css/add.css")}}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{asset('css/add.css')}}">
     <title>Document</title>
 </head>
 <body>
-    <div class="add-form">
-        <h1>Add Form</h1>
-        <br>
-        <from action="">
+    <div>
+        <h1 id="label-form">Add form</h1>
+        <from action="/customer" method="POST">
+            @csrf
             <label for="">Name : </label>
-            <input type="text">
+            <br>
+            <input type="text" name="name">
             <br><br>
             <label for="">Phone : </label>
-            <input type="text">
+            <br>
+            <input type="text" name="phone">
             <br><br>
-            <button class="submit-btn" type="submit">Sunmit</button>
+            <button type="reset" class="btn-primary">Submit</button>
         </form>
     </div>
 </body>

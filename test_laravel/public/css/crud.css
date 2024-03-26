@@ -114,11 +114,8 @@ table.table td i {
     font-size: 95%;
 }    
 
-.add-btn{
+.btn-success{
     border-radius: 10px;
-    background-color: lightgreen;
-    color: white;
     float: right;
-    padding-right: 20px;
-    padding-left: 20px;
+    padding: 5px 20px;
 }

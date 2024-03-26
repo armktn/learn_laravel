@@ -2,7 +2,7 @@
     margin: 0;
 }
 
-.add-form{
+div{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -10,8 +10,14 @@
     height: 100vh;
 }
 
-.submit-btn{
+#label-form{
+    margin-bottom: 10px;
+}
+
+.btn-primary{
     display: block;
     margin: auto;
+    border: none;
     padding: 5px 10px;
+    border-radius: 10px;
 }

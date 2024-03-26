@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="{{asset("css/crud.css")}}">
+<link rel="stylesheet" href="{{asset('css/crud.css')}}">
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
@@ -29,7 +29,7 @@ $(document).ready(function(){
                     </div>
                     <div class="col-sm-4">
                         <div class="search-box">
-                            <a href="/customer/create"><button class="add-btn">Add</button></a>
+                            <a href="/customer/create"><button class="btn-success">Add</button></a>
                         </div>
                     </div>
                 </div>
