@@ -8,21 +8,18 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="container">
-        <h1>Add Form</h1>
+    <div class = "container">
+        <h1>Read Form</h1>
         <br>
-        <form action="/customers" method = "POST" >
-            @csrf
-            <label for="">Name : </label>
-            <input type="text" name = "name">
+        <div>
+            <label for="">Name : {{$c_data -> c_name}}</label>
             <br>
             <br>
-            <label for="">Phone : </label>
-            <input type="text" name = "phone">
+            <label for="">Phone : {{$c_data -> c_phone}}</label>
             <br>
             <br>
-            <button class ="submit-btn" type = "submit">submit</button>
-        </form>
+            <a href="/customers"><button class ="back-btn" type = "button">Back</button></a>
+        </div>
     </div>
 </body>
 </html>

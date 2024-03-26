@@ -112,10 +112,26 @@ table.table td i {
     float: left;
     margin-top: 6px;
     font-size: 95%;
-}    
+}
 
-.btn-success{
+.add-btn{
     border-radius: 10px;
+    background-color: greenyellow;
+    color:black;
     float: right;
-    padding: 5px 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.delete-form{
+    display: inline;
+}
+
+.delete{
+    color: red;
+}
+
+.delete-btn{
+    border:none;
+    background: transparent;
 }

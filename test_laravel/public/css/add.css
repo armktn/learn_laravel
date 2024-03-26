@@ -1,23 +1,18 @@
 *{
-    margin: 0;
+    margin:0;
 }
 
-div{
-    display: flex;
+.container{
+    display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
 }
 
-#label-form{
-    margin-bottom: 10px;
-}
-
-.btn-primary{
-    display: block;
-    margin: auto;
-    border: none;
-    padding: 5px 10px;
-    border-radius: 10px;
+.submit-btn, .back-btn{
+    display:block;
+    margin:auto;
+    padding:10px 40px; 
+    /* padding : 10px(top bottom) 40px(left right) */
 }

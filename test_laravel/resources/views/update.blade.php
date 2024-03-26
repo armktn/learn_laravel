@@ -9,16 +9,17 @@
 </head>
 <body>
     <div class="container">
-        <h1>Add Form</h1>
+        <h1>Update Form</h1>
         <br>
-        <form action="/customers" method = "POST" >
+        <form action="/customers/{{$c_data -> c_id}}" method = "POST" > 
             @csrf
+            @method("PUT")
             <label for="">Name : </label>
-            <input type="text" name = "name">
+            <input type="text" name = "name" value = {{$c_data -> c_name}}>
             <br>
             <br>
             <label for="">Phone : </label>
-            <input type="text" name = "phone">
+            <input type="text" name = "phone" value = {{$c_data -> c_phone}}>
             <br>
             <br>
             <button class ="submit-btn" type = "submit">submit</button>
