@@ -23,7 +23,7 @@ Route::post("/register",[userController::class,"register_store"]);
 Route::post("/login",[userController::class,"login_auth"]);
 Route::get("/logout",[userController::class,"logout"]);
 
-Route::get("/",function(){
-    return Redirect::to("/customers");
+Route::get('/', function () {
+    return view('crud');
 });
 Route::resource("/customers",customerController::class) -> middleware("auth");
